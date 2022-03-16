@@ -1,0 +1,27 @@
+<HTML>
+<HEAD> 
+<TITLE>Konversi Nilai</TITLE>
+</HEAD>
+<SCRIPT Language = "Javascript">
+function test()
+{
+var bil1=document.kirim.nilai.value
+if (bil1>=81 && bil1<=100) document.kirim.konversi.value="A"
+else if (bil1>=71 && bil1<=80) document.kirim.konversi.value="AB"
+else if (bil1>=66 && bil1<=70) document.kirim.konversi.value="B"
+else if (bil1>=61 && bil1<=65) document.kirim.konversi.value="BC"
+else if (bil1>=56 && bil1<=60) document.kirim.konversi.value="C"
+else if (bil1>=41 && bil1<=55) document.kirim.konversi.value="D"
+else if (bil1>=0 && bil1<=40) document.kirim.konversi.value="E"
+}
+</SCRIPT>
+<BODY>
+<form method="POST" name="kirim">
+<H1>KONVERSI NILAI</H1>
+<p><B>NILAI : </B> <input type="text" name="nilai" size="23"></p>
+<input type="button" value="konversi" onclick=test()>
+<p><B>HASIL KONVERSI : </B><input type="text" name="konversi" size="10"></p>
+<input type="reset" value="kembali" name="reset">
+</form>
+</BODY>
+</HTML>
